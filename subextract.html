@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SubExtract · Atelier</title>
+<meta name="description" content="Sous-titres incrustés → fichiers .ass, par OCR. Lit des épisodes dont les sous-titres sont incrustés dans l&#39;image, reconnaît le texte (OCR) et produit un .ass par épisode avec les bons timings. Les styles se règlent dans le logiciel, avec un aperçu fidèle (libass, comme les lecteurs vidéo et Aegisub).">
+<meta name="theme-color" content="#7b5cff">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Atelier">
+<meta property="og:title" content="SubExtract · Atelier">
+<meta property="og:description" content="Sous-titres incrustés → fichiers .ass, par OCR. Lit des épisodes dont les sous-titres sont incrustés dans l&#39;image, reconnaît le texte (OCR) et produit un .ass par épisode avec les bons timings. Les styles se règlent dans le logiciel, avec un aperçu fidèle (libass, comme les lecteurs vidéo et Aegisub).">
+<meta property="og:image" content="https://animeespace.github.io/atelier/assets/atelier.webp">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="assets/logo.png">
+<link rel="apple-touch-icon" href="assets/logo.png">
+<link rel="stylesheet" href="assets/style.css?v=7102036b">
+</head>
+<body class="app">
+<a class="skip" href="#contenu">Aller au contenu</a>
+<header class="topbar">
+  <div class="container topbar-inner">
+    <a class="brand" href="index.html"><img src="assets/logo.png" alt="" width="28" height="28"><span>Atelier</span></a>
+    <nav class="nav" aria-label="Navigation principale">
+      <a class="hide-sm" href="index.html#logiciels">Logiciels</a>
+      <a class="hide-sm" href="index.html#installation">Installation</a>
+      <a href="guide.html">Guide</a>
+      <a class="hide-sm" href="index.html#questions">Questions</a>
+    </nav>
+    <a class="btn btn-primary btn-sm js-download" href="https://github.com/animeespace/atelier/releases/latest/download/Atelier-Setup.exe"><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5v11"/><path d="m7 10 5 5 5-5"/><path d="M5 20.5h14"/></svg><span>Télécharger</span></a>
+  </div>
+</header>
+
+<main id="contenu">
+<section class="page-head">
+  <div class="container page-head-inner">
+<img class="app-icon-lg" src="assets/apps/subextract.png" alt="" width="84" height="84">    <div>
+<p class="eyebrow">Sous-titres</p>      <h1>SubExtract</h1>
+      <p class="lead">Sous-titres incrustés → fichiers .ass, par OCR.</p>
+      <p class="meta">Version 2.1.0 · publiée le 19 octobre 2026 · 225 Mo à télécharger, 548 Mo une fois installé</p>
+    </div>
+  </div>
+</section>
+
+<div class="container doc">
+  <aside class="doc-nav">
+    <nav aria-label="Sur cette page">
+      <p class="doc-nav-title">Sur cette page</p>
+      <a href="#installer">Installer SubExtract</a>
+      <a href="#nouveautes">Nouveautés</a>
+<a href="#configuration-requise-et-adaptation-au-pc">Configuration requise et adaptation au PC</a><a href="#①-zone-et-réglages">① Zone et réglages</a><a href="#②-file-dattente">② File d'attente</a><a href="#③-styles-et-aperçu">③ Styles et aperçu</a><a href="#performances-et-limites">Performances et limites</a><a href="#fichiers">Fichiers</a>    </nav>
+  </aside>
+
+  <article class="prose">
+    <p class="intro">Lit des épisodes dont les sous-titres sont incrustés dans l&#39;image, reconnaît le texte (OCR) et produit un .ass par épisode avec les bons timings. Les styles se règlent dans le logiciel, avec un aperçu fidèle (libass, comme les lecteurs vidéo et Aegisub).</p>
+    <div class="callout" id="installer">
+      <div>
+        <h2>Installer SubExtract</h2>
+        <p>Télécharge Atelier, ouvre-le, puis clique sur <strong>Installer</strong> sur la carte SubExtract.
+          Les mises à jour arrivent ensuite toutes seules.</p>
+      </div>
+      <a class="btn btn-primary js-download" href="https://github.com/animeespace/atelier/releases/latest/download/Atelier-Setup.exe"><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5v11"/><path d="m7 10 5 5 5-5"/><path d="M5 20.5h14"/></svg><span>Télécharger Atelier</span></a>
+    </div>
+
+    <h2 id="nouveautes">Nouveautés</h2>
+    <div class="release current">
+      <h3>Version 2.1.0 <span class="new">Actuelle</span><span class="date">19 octobre 2026</span></h3>
+      <p>Première version</p>
+    </div>
+
+    <hr>
+    <p>SubExtract lit des épisodes VOSTFR dont les sous-titres sont incrustés dans l'image,
+reconnaît le texte (OCR), et produit un fichier <code>.ass</code> par épisode avec les bons timings.
+Les styles se règlent ensuite directement dans le logiciel, avec un aperçu fidèle (moteur libass,
+le même que celui des lecteurs vidéo et d'Aegisub).</p>
+<h2 id="configuration-requise-et-adaptation-au-pc">Configuration requise et adaptation au PC</h2>
+<ul>
+<li><strong>Windows 10 ou 11, 64 bits.</strong> 8 Go de RAM conseillés (4 Go minimum, en profil « Économe »).</li>
+<li><strong>Aucune carte graphique n'est obligatoire.</strong> Le logiciel détecte le matériel au lancement
+  (onglet ④) et choisit lui-même :</li>
+<li>le nombre de moteurs OCR en parallèle selon le nombre de cœurs et la mémoire ;</li>
+<li>le modèle Whisper : <code>large-v3-turbo</code> sur carte NVIDIA, <code>small</code> (ou <code>base</code> sur les petits PC)
+    sur le processeur ;</li>
+<li>la précision de calcul compatible avec la carte (float16, int8…).</li>
+<li><strong>Profils</strong> : <em>Automatique</em>, <em>Économe</em> (moitié des ressources, le PC reste utilisable),
+  <em>Maximum</em>. Chaque réglage peut aussi être fixé à la main (0 / « auto » = automatique).</li>
+<li><strong>Carte NVIDIA</strong> : onglet ④ → <em>Installer les composants GPU</em> (≈ 550 Mo, une seule fois,
+  bibliothèque cuBLAS officielle vérifiée par empreinte SHA-256). Whisper devient 5 à 20 fois
+  plus rapide. Pilote NVIDIA 527 ou plus récent requis. Les cartes AMD / Intel ne sont pas
+  utilisées par Whisper (il tourne alors sur le processeur).</li>
+<li><strong>Mode portable</strong> (clé USB) : créez un fichier vide <code>portable.txt</code> à côté de <code>SubExtract.exe</code> ;
+  réglages, modèles et composants GPU sont alors rangés dans <code>SubExtract-data</code> à côté de l'exe.</li>
+<li><strong>Modèles</strong> : téléchargés au premier usage (Whisper 75 Mo à 3 Go selon le modèle, comparaison
+  du sens 120 Mo), ou à l'avance depuis l'onglet ④ ; le dossier est modifiable.</li>
+</ul>
+<p>Durée indicative pour un épisode SD de 23 min : ~4 min 30 avec une RTX 5070 ; ~6 à 8 min sans
+carte NVIDIA sur un processeur 8 cœurs (Whisper <code>small</code>).</p>
+<hr />
+<h2 id="①-zone-et-réglages">① Zone et réglages</h2>
+<ol>
+<li><strong>Ouvrir une vidéo de référence</strong> (ou la glisser dans la fenêtre).</li>
+<li>Avec le curseur, allez sur un moment où un sous-titre est affiché.</li>
+<li><strong>Tracez la zone</strong> des sous-titres à la souris (clic-glisser), puis ajustez-la avec les poignées.
+   Elle est mémorisée et s'applique à toutes les vidéos jusqu'à ce que vous la changiez.</li>
+<li>Le <strong>masque rouge</strong> montre ce que le logiciel considère comme du texte : il doit couvrir
+   les lettres, et presque rien d'autre. Si ce n'est pas le cas :
+   - <strong>Pipette</strong> → cliquez sur une lettre pour prendre la couleur exacte du texte ;
+   - sous-titres jaunes, ou chansons d'une autre couleur → cochez <em>Deuxième couleur</em> ;
+   - <em>Contour : Automatique</em> (par défaut) accepte n'importe quel contour plus sombre que le texte
+     (noir, gris, coloré, ombre fine) ; <em>Couleur précise</em> exige la couleur choisie ; <em>Aucun</em> pour
+     du texte sans contour.</li>
+<li><strong>Tester l'OCR sur cette image</strong> : le texte retenu s'affiche en vert, ce qui est rejeté
+   en rouge avec la raison (japonais, confiance trop faible, texte trop petit…).
+   Testez sur un sous-titre <strong>à deux lignes</strong> : la zone doit contenir les deux lignes en entier,
+   avec un peu de marge. Si le texte touche le bord de la zone, un avertissement s'affiche
+   (des lettres risquent d'être coupées).</li>
+</ol>
+<p>Les vidéos en basse définition (480p, vieux épisodes) sont automatiquement agrandies avant l'OCR.</p>
+<p>Le texte japonais (kanji, hiragana, katakana) présent dans la zone est ignoré ;
+le français et le romaji sont conservés.</p>
+<h3 id="réglages-utiles">Réglages utiles</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Réglage</th>
+<th>Effet</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Analyse : toutes les images</td>
+<td>Timings exacts à l'image près (recommandé). 1 sur 2 ou 3 = plus rapide, timings à ±1-2 images.</td>
+</tr>
+<tr>
+<td>Seuil de changement</td>
+<td>Plus bas = détecte des changements plus fins ; plus haut = plus tolérant aux décors animés.</td>
+</tr>
+<tr>
+<td>Durée min.</td>
+<td>Les détections plus courtes sont ignorées (parasites).</td>
+</tr>
+<tr>
+<td>Confiance min.</td>
+<td>Monte-la si du texte parasite passe ; baisse-la si des lignes manquent.</td>
+</tr>
+<tr>
+<td>Lecture multiple</td>
+<td>Relit chaque ligne plusieurs fois pour retrouver les espaces que l'OCR oublie.</td>
+</tr>
+<tr>
+<td>Fusionner les répétitions</td>
+<td>Deux lignes consécutives contenant la même phrase (ponctuation, accents et espaces ignorés), séparées de moins de cette durée, deviennent une seule ligne.</td>
+</tr>
+<tr>
+<td>Corrections françaises</td>
+<td>« coeur » → « cœur », « ll faut » → « Il faut », « .. » → « ... », etc.</td>
+</tr>
+<tr>
+<td>Correction par dictionnaire</td>
+<td>Répare les erreurs typiques de l'OCR à l'aide d'un dictionnaire de fréquences du français issu de sous-titres : espace oublié (« tatoupie » → « ta toupie »), lettre doublée perdue (« apelle » → « appelle »), apostrophe oubliée (« cest » → « c'est »), accent parasite (« vraîment » → « vraiment »). Les noms propres et les lignes en romaji ne sont pas modifiés.</td>
+</tr>
+<tr>
+<td>Espaces avant ? ! : ;</td>
+<td>Applique la typographie française.</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="audio--whisper--spectre-version-2">Audio : Whisper + spectre (version 2)</h3>
+<p>Pendant la lecture de l'image, l'audio de l'épisode est analysé (sur la carte graphique NVIDIA
+si elle est présente, ~30 s par épisode) :
+1. <strong>Détection de la voix</strong> (Silero VAD, par fenêtres de 30 s) et <strong>spectre</strong> (énergie dans la bande
+   de la voix) : on sait quand chaque phrase commence et finit.
+2. <strong>Whisper</strong> (large-v3-turbo) transcrit le japonais de chaque phrase.
+3. <strong>Correspondance</strong> : chaque phrase entendue est rattachée au(x) sous-titre(s) capté(s) au même
+   moment, et le sens est vérifié (modèle multilingue qui compare directement le japonais entendu
+   et le français lu). Si ça correspond, le sous-titre prend les temps de l'audio
+   (« Étendre » : il couvre toute la phrase, sans jamais être raccourci ni empiéter sur ses voisins).
+4. <strong>Phrase entendue sans sous-titre</strong> : le passage est relu jusqu'à 20 fois avec des réglages
+   différents (zones plus grandes, haut de l'image, contraste, agrandissement…). Si un sous-titre
+   est trouvé, il est ajouté avec son vrai temps d'affichage ; sinon la ligne est gardée <strong>vide</strong>,
+   avec en note (colonne « Note » de l'onglet ③, champ « Acteur » d'Aegisub) ce qui a été dit en
+   japonais et sa traduction anglaise.
+5. Les phrases identiques qui se suivent sans autre phrase prononcée entre elles sont fusionnées.</p>
+<p>Le modèle Whisper (~1,6 Go) et le modèle de comparaison (~120 Mo) sont téléchargés au premier usage,
+puis réutilisés hors ligne.</p>
+<h2 id="②-file-dattente">② File d'attente</h2>
+<ol>
+<li><strong>Ajouter des vidéos</strong> / <strong>Ajouter un dossier</strong> (ou glisser les fichiers dans la liste).
+   Ils sont triés dans l'ordre naturel : 01, 02, … 10, 11.</li>
+<li>Choisissez le dossier de sortie (ou « à côté de chaque vidéo »).</li>
+<li><strong>Lancer l'extraction</strong>. <code>01.mp4</code> donne <code>01.ass</code>, <code>02.mp4</code> donne <code>02.ass</code>, etc.</li>
+</ol>
+<p>Les réglages de l'onglet ① et le style par défaut sont figés au lancement de la file.
+« Remettre en attente » permet de relancer un fichier déjà traité.</p>
+<h2 id="③-styles-et-aperçu">③ Styles et aperçu</h2>
+<ul>
+<li>À gauche, les <code>.ass</code> du dossier ; au centre, l'aperçu rendu sur l'image de la vidéo
+  (les sous-titres incrustés d'origine peuvent être floutés pour ne voir que les vôtres) ;
+  en dessous, toutes les lignes, modifiables directement (double-clic), avec
+  rechercher / remplacer, fusion, suppression, et décalage des temps.</li>
+<li>À droite, l'éditeur de style : police, taille, gras / italique, couleurs et transparence,
+  contour, ombre, boîte opaque, alignement (pavé 3×3), marges gauche / droite / verticale,
+  échelle, espacement, rotation.</li>
+<li><strong>Fusionner les doublons</strong> : réunit les lignes consécutives qui répètent la même phrase,
+  dans le fichier ouvert ou dans tous les <code>.ass</code> du dossier (utile pour des fichiers déjà extraits).</li>
+<li><strong>Préréglages</strong> : enregistrez vos styles favoris et rechargez-les en un clic.</li>
+<li><strong>Appliquer ce style à tous les .ass du dossier</strong> : règle les 15 épisodes d'un coup.</li>
+<li><strong>Utiliser comme style par défaut</strong> : les prochaines extractions sortiront directement avec ce style.</li>
+<li><code>Ctrl+S</code> enregistre. Les fichiers restent compatibles Aegisub (la vidéo associée y est indiquée).</li>
+</ul>
+<hr />
+<h2 id="performances-et-limites">Performances et limites</h2>
+<ul>
+<li>Un épisode SD de 23 min s'extrait en <strong>4 à 5 min</strong> avec l'audio (i7-13700KF + RTX 5070),
+  dont ~2 min 20 d'image, ~30 s d'audio (en parallèle) et ~2 min de relecture ciblée.
+  Sans l'audio : ~2 min 20.</li>
+<li>Les timings sont exacts à l'image près ; un sous-titre avec fondu (fade) peut être décalé de 2-3 images.</li>
+<li>L'OCR peut oublier un espace ou confondre un signe de ponctuation sur un décor très chargé :
+  c'est à corriger dans l'onglet ③ (rechercher / remplacer aide pour les erreurs répétées).</li>
+<li>Une seule zone est analysée : des sous-titres affichés tout en haut de l'écran (panneaux, double
+  dialogue) ne sont lus que s'ils sont dans la zone.</li>
+<li>Les fichiers <code>.m4p</code> protégés par DRM (iTunes) ne peuvent pas être lus.</li>
+<li>Windows peut afficher un avertissement SmartScreen au premier lancement (exe non signé) :
+  « Informations complémentaires » → « Exécuter quand même ».</li>
+</ul>
+<h2 id="fichiers">Fichiers</h2>
+<ul>
+<li>Réglages : <code>%APPDATA%\SubExtract\config.json</code></li>
+<li>Journal des erreurs : <code>%APPDATA%\SubExtract\erreurs.log</code></li>
+</ul>
+  </article>
+</div>
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <span>Atelier 1.0.0 · page mise à jour le 19 octobre 2026</span>
+    <nav aria-label="Liens du pied de page">
+      <a href="index.html#logiciels">Logiciels</a>
+      <a href="guide.html">Guide</a>
+      <a href="guide.html#problemes">Un problème ?</a>
+      <a href="https://github.com/animeespace/atelier/releases" target="_blank" rel="noopener">Toutes les versions</a>
+    </nav>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite" hidden>
+  <span class="ok"><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span>
+  <div>
+    <strong>Le téléchargement a commencé</strong>
+    <p>Ouvre <b>Atelier-Setup.exe</b> depuis tes téléchargements.
+<a href="index.html#installation">Voir les étapes d'installation</a>.</p>
+  </div>
+  <button type="button" aria-label="Fermer"><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+</div>
+<script src="assets/site.js?v=7102036b" defer></script>
+</body>
+</html>

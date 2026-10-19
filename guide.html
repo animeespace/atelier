@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Guide d'utilisation · Atelier</title>
+<meta name="description" content="Installer Atelier, installer et mettre à jour IntroMux, Retime et SubExtract, régler les problèmes.">
+<meta name="theme-color" content="#7b5cff">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Atelier">
+<meta property="og:title" content="Guide d'utilisation · Atelier">
+<meta property="og:description" content="Installer Atelier, installer et mettre à jour IntroMux, Retime et SubExtract, régler les problèmes.">
+<meta property="og:image" content="https://animeespace.github.io/atelier/assets/atelier.webp">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="assets/logo.png">
+<link rel="apple-touch-icon" href="assets/logo.png">
+<link rel="stylesheet" href="assets/style.css?v=7102036b">
+</head>
+<body class="guide">
+<a class="skip" href="#contenu">Aller au contenu</a>
+<header class="topbar">
+  <div class="container topbar-inner">
+    <a class="brand" href="index.html"><img src="assets/logo.png" alt="" width="28" height="28"><span>Atelier</span></a>
+    <nav class="nav" aria-label="Navigation principale">
+      <a class="hide-sm" href="index.html#logiciels">Logiciels</a>
+      <a class="hide-sm" href="index.html#installation">Installation</a>
+      <a href="guide.html" aria-current="page">Guide</a>
+      <a class="hide-sm" href="index.html#questions">Questions</a>
+    </nav>
+    <a class="btn btn-primary btn-sm js-download" href="https://github.com/animeespace/atelier/releases/latest/download/Atelier-Setup.exe"><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5v11"/><path d="m7 10 5 5 5-5"/><path d="M5 20.5h14"/></svg><span>Télécharger</span></a>
+  </div>
+</header>
+
+<main id="contenu">
+<section class="page-head">
+  <div class="container">
+    <p class="eyebrow"><svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H20v17H6.5A2.5 2.5 0 0 0 4 21.5z"/><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/></svg> Guide</p>
+    <h1>Guide d'utilisation</h1>
+    <p class="lead">Tout ce qu'il faut savoir pour installer Atelier, tes logiciels et leurs mises à jour.</p>
+  </div>
+</section>
+
+<div class="container doc">
+  <aside class="doc-nav">
+    <nav aria-label="Sur cette page">
+      <p class="doc-nav-title">Sur cette page</p>
+      <a href="#configuration">Configuration requise</a>
+      <a href="#installer-atelier">Installer Atelier</a>
+      <a href="#installer-logiciel">Installer un logiciel</a>
+      <a href="#ouvrir">Ouvrir un logiciel</a>
+      <a href="#mises-a-jour">Les mises à jour</a>
+      <a href="#parametres">Les paramètres</a>
+      <a href="#reparer">Réparer ou désinstaller un logiciel</a>
+      <a href="#quitter">Quitter ou désinstaller Atelier</a>
+      <a href="#problemes">En cas de problème</a>
+    </nav>
+  </aside>
+
+  <article class="prose">
+    <h2 id="configuration">Configuration requise</h2>
+    <ul>
+      <li><strong>Windows 10 ou 11, 64 bits.</strong> Pas de Mac ni de Linux.</li>
+      <li><strong>Une connexion Internet</strong> pour installer les logiciels et recevoir les mises à jour. Une fois
+        installés, ils fonctionnent sans connexion.</li>
+      <li><strong>De la place sur le disque</strong> : environ 70 Mo pour Atelier, plus celle des logiciels choisis :
+        <ul>
+<li>IntroMux : 312 Mo, dont 120 Mo à télécharger</li><li>Retime : 4,7 Go, dont 2,9 Go à télécharger</li><li>SubExtract : 548 Mo, dont 225 Mo à télécharger</li>        </ul>
+      </li>
+      <li><strong>Aucun droit administrateur</strong> : tout s'installe dans ton dossier utilisateur.</li>
+    </ul>
+
+    <h2 id="installer-atelier">Installer Atelier</h2>
+    <ol>
+      <li><a class="js-download" href="https://github.com/animeespace/atelier/releases/latest/download/Atelier-Setup.exe">Télécharge Atelier-Setup.exe</a> (21 Mo).
+        Si ton navigateur prévient que ce fichier « n'est pas couramment téléchargé », choisis <strong>Conserver</strong>
+        (dans Edge : menu <strong>…</strong> du téléchargement → <strong>Conserver</strong>, puis <strong>Conserver quand même</strong>).</li>
+      <li>Ouvre le fichier depuis tes téléchargements.</li>
+      <li>Si Windows affiche <strong>« Windows a protégé votre ordinateur »</strong>, clique sur
+        <strong>Informations complémentaires</strong>, puis sur <strong>Exécuter quand même</strong>. C'est normal :
+        Atelier n'est pas signé par un éditeur payant. Windows ne le demande qu'une fois.</li>
+      <li>Laisse cochée (ou non) la case du raccourci sur le Bureau, clique sur <strong>Installer</strong>, puis sur <strong>Terminer</strong>.</li>
+    </ol>
+<figure class="smartscreen">
+  <div class="ss" aria-hidden="true">
+    <h4>Windows a protégé votre ordinateur</h4>
+    <p>Microsoft Defender SmartScreen a empêché le démarrage d'une application non reconnue. L'exécution de cette
+      application peut présenter un risque pour votre ordinateur.</p>
+    <span class="ss-more target">Informations complémentaires<span class="pin" style="right:-16px;top:-16px">1</span></span>
+    <div class="ss-buttons"><span class="ss-btn">Ne pas exécuter</span></div>
+  </div>
+  <div class="ss" aria-hidden="true">
+    <h4>Windows a protégé votre ordinateur</h4>
+    <p>Microsoft Defender SmartScreen a empêché le démarrage d'une application non reconnue.</p>
+    <p class="info-table"><span>Application :</span> Atelier-Setup.exe<br><span>Éditeur :</span> Éditeur inconnu</p>
+    <div class="ss-buttons">
+      <span class="ss-btn primary target">Exécuter quand même<span class="pin" style="right:-16px;top:-16px">2</span></span>
+      <span class="ss-btn">Ne pas exécuter</span>
+    </div>
+  </div>
+  <figcaption class="ss-caption">Illustration : ce que Windows peut afficher au premier lancement. Clique sur ①, puis sur ②.</figcaption>
+</figure>    <p>Atelier s'ouvre tout seul. Il est aussi dans le menu Démarrer. Il démarre désormais avec Windows, discrètement,
+      près de l'horloge : c'est ce qui lui permet d'installer les mises à jour sans que tu y penses.</p>
+
+    <h2 id="installer-logiciel">Installer un logiciel</h2>
+    <p>Dans <strong>Applications</strong>, chaque logiciel a sa carte. Clique sur <strong>Installer</strong> : la carte
+      affiche le téléchargement (taille et vitesse), puis l'installation. Le bouton <strong>✕</strong> l'annule.</p>
+    <p>Une fois installé, le logiciel passe dans la partie <strong>Installé sur cette machine</strong> et apparaît dans le
+      menu Démarrer (et sur le Bureau, si ce réglage est activé). Les filtres en haut (catégories) et la barre de recherche
+      aident à s'y retrouver quand il y en a beaucoup.</p>
+    <div class="tip"><p><strong>Astuce :</strong> les logiciels vont dans <code>%LOCALAPPDATA%\Atelier\Apps</code>.
+      Pour les mettre sur un autre disque (Retime est gros), change le dossier dans
+      <a href="#parametres">Paramètres</a> <em>avant</em> de les installer.</p></div>
+    <p>Si le téléchargement est coupé (connexion perdue, PC éteint), relance-le : il reprend là où il s'était arrêté.</p>
+
+    <h2 id="ouvrir">Ouvrir un logiciel</h2>
+    <ul>
+      <li>le bouton <strong>Ouvrir</strong> de sa carte dans Atelier ;</li>
+      <li>le menu Démarrer, ou son raccourci sur le Bureau ;</li>
+      <li>clic droit sur l'icône de Atelier près de l'horloge → <strong>Lancer …</strong>.</li>
+    </ul>
+    <p>Tu peux aussi l'épingler à la barre des tâches : l'épingle reste valable après les mises à jour.</p>
+
+    <h2 id="mises-a-jour">Les mises à jour</h2>
+    <p>Atelier vérifie s'il y a du nouveau à chaque démarrage, puis toutes les heures. Par défaut, il installe
+      les mises à jour <strong>tout seul</strong>, en arrière-plan, et te prévient par une notification.</p>
+    <ul>
+      <li>Une <strong>pastille bleue</strong> sur <strong>Mises à jour</strong> signale qu'une nouvelle version est
+        disponible. Cette page montre ce qui change, la taille à télécharger (souvent quelques Mo seulement) et un
+        bouton <strong>Mettre à jour</strong>.</li>
+      <li><strong>Rechercher</strong> (ou l'icône ↻ en haut à droite) vérifie tout de suite, sans attendre l'heure suivante.</li>
+      <li>Si un logiciel est <strong>ouvert</strong>, sa mise à jour est préparée à côté et sa carte indique
+        « prête : ferme le logiciel ». Elle est appliquée dès que tu le fermes, y compris s'il était réduit près de
+        l'horloge (comme IntroMux).</li>
+      <li>Atelier se met aussi à jour lui-même : il se ferme et se rouvre en quelques secondes.</li>
+    </ul>
+    <p>Pour choisir toi-même quand mettre à jour, coupe <strong>Mises à jour automatiques</strong> sur la page
+      Mises à jour : tu recevras une notification à chaque nouvelle version.</p>
+
+    <h2 id="parametres">Les paramètres</h2>
+    <div class="table-wrap"><table>
+      <thead><tr><th>Réglage</th><th>Ce qu'il fait</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Dossier d'installation</strong></td><td>Où sont installés les prochains logiciels. Les logiciels déjà installés restent où ils sont.</td></tr>
+        <tr><td><strong>Raccourci sur le Bureau</strong></td><td>Crée un raccourci sur le Bureau à chaque installation. Il y en a toujours un dans le menu Démarrer.</td></tr>
+        <tr><td><strong>Installer automatiquement les mises à jour</strong></td><td>Logiciels et Atelier lui-même, en arrière-plan.</td></tr>
+        <tr><td><strong>Démarrer avec Windows</strong></td><td>Atelier s'ouvre discrètement à l'allumage du PC pour garder tes logiciels à jour.</td></tr>
+        <tr><td><strong>La croix réduit dans la zone de notification</strong></td><td>Fermer la fenêtre la range près de l'horloge au lieu de quitter Atelier.</td></tr>
+      </tbody>
+    </table></div>
+
+    <h2 id="reparer">Réparer ou désinstaller un logiciel</h2>
+    <p>Le menu <strong>…</strong> en haut à droite de chaque carte propose :</p>
+    <ul>
+      <li><strong>Détails et nouveautés</strong> : la description et l'historique des versions ;</li>
+      <li><strong>Ouvrir le dossier d'installation</strong> ;</li>
+      <li><strong>Créer un raccourci sur le Bureau</strong> ;</li>
+      <li><strong>Réparer (tout retélécharger)</strong> : si le logiciel ne démarre plus, par exemple après le passage d'un antivirus ;</li>
+      <li><strong>Désinstaller</strong> : supprime le logiciel. Ses réglages et tes fichiers de travail sont conservés,
+        tu les retrouveras si tu le réinstalles.</li>
+    </ul>
+
+    <h2 id="quitter">Quitter ou désinstaller Atelier</h2>
+    <p><strong>Quitter :</strong> clic droit sur l'icône de Atelier près de l'horloge → <strong>Quitter</strong>
+      (la croix de la fenêtre ne fait que la réduire).</p>
+    <p><strong>Désinstaller :</strong> Paramètres de Windows → <strong>Applications</strong> → Atelier →
+      <strong>Désinstaller</strong>. Le désinstalleur demande s'il faut aussi supprimer les logiciels installés.</p>
+
+    <h2 id="problemes">En cas de problème</h2>
+    <h3>« Hors ligne » ou « Impossible de récupérer la liste des logiciels »</h3>
+    <p>Vérifie ta connexion, puis clique sur <strong>Réessayer</strong>. Les logiciels déjà installés fonctionnent sans connexion.</p>
+    <h3>Mon antivirus a bloqué ou supprimé un fichier</h3>
+    <p>C'est un faux positif fréquent avec ce genre de programme. Restaure le fichier depuis la quarantaine, ajoute une
+      exception pour le dossier <code>%LOCALAPPDATA%\Atelier</code>, puis utilise <strong>Réparer</strong> dans le menu
+      <strong>…</strong> du logiciel.</p>
+    <h3>« Espace disque insuffisant »</h3>
+    <p>Libère de la place, ou choisis un autre disque dans <a href="#parametres">Paramètres → Dossier d'installation</a>,
+      puis réessaie.</p>
+    <h3>Une mise à jour reste « prête » sans s'appliquer</h3>
+    <p>Le logiciel tourne encore, peut-être réduit près de l'horloge. Quitte-le complètement : la mise à jour s'applique
+      dans les secondes qui suivent.</p>
+    <h3>« Dossier d'installation introuvable »</h3>
+    <p>Le dossier du logiciel a été déplacé ou supprimé. Clique sur <strong>Réinstaller</strong> sur sa carte.</p>
+    <h3>Rien de tout ça</h3>
+    <p>Envoie-moi le journal de Atelier : <strong>Paramètres → Ouvrir le dossier des journaux</strong>, fichier
+      <code>atelier.log</code>. Pour un souci dans un logiciel, regarde aussi sa page :
+<a href="intromux.html">IntroMux</a>, <a href="retime.html">Retime</a>, <a href="subextract.html">SubExtract</a>.</p>
+  </article>
+</div>
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <span>Atelier 1.0.0 · page mise à jour le 19 octobre 2026</span>
+    <nav aria-label="Liens du pied de page">
+      <a href="index.html#logiciels">Logiciels</a>
+      <a href="guide.html">Guide</a>
+      <a href="guide.html#problemes">Un problème ?</a>
+      <a href="https://github.com/animeespace/atelier/releases" target="_blank" rel="noopener">Toutes les versions</a>
+    </nav>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite" hidden>
+  <span class="ok"><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span>
+  <div>
+    <strong>Le téléchargement a commencé</strong>
+    <p>Ouvre <b>Atelier-Setup.exe</b> depuis tes téléchargements.
+<a href="index.html#installation">Voir les étapes d'installation</a>.</p>
+  </div>
+  <button type="button" aria-label="Fermer"><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+</div>
+<script src="assets/site.js?v=7102036b" defer></script>
+</body>
+</html>

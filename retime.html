@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Retime · Atelier</title>
+<meta name="description" content="Recale tes .ass sur la voix japonaise, automatiquement. Recale un fichier .ass sur la voix japonaise d&#39;une vidéo grâce à Whisper, à l&#39;analyse de la voix isolée et à la comparaison du sens entre le japonais entendu et le texte. Timeline pour vérifier et ajuster chaque ligne, traitement par lot des épisodes.">
+<meta name="theme-color" content="#7b5cff">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Atelier">
+<meta property="og:title" content="Retime · Atelier">
+<meta property="og:description" content="Recale tes .ass sur la voix japonaise, automatiquement. Recale un fichier .ass sur la voix japonaise d&#39;une vidéo grâce à Whisper, à l&#39;analyse de la voix isolée et à la comparaison du sens entre le japonais entendu et le texte. Timeline pour vérifier et ajuster chaque ligne, traitement par lot des épisodes.">
+<meta property="og:image" content="https://animeespace.github.io/atelier/assets/atelier.webp">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="assets/logo.png">
+<link rel="apple-touch-icon" href="assets/logo.png">
+<link rel="stylesheet" href="assets/style.css?v=7102036b">
+</head>
+<body class="app">
+<a class="skip" href="#contenu">Aller au contenu</a>
+<header class="topbar">
+  <div class="container topbar-inner">
+    <a class="brand" href="index.html"><img src="assets/logo.png" alt="" width="28" height="28"><span>Atelier</span></a>
+    <nav class="nav" aria-label="Navigation principale">
+      <a class="hide-sm" href="index.html#logiciels">Logiciels</a>
+      <a class="hide-sm" href="index.html#installation">Installation</a>
+      <a href="guide.html">Guide</a>
+      <a class="hide-sm" href="index.html#questions">Questions</a>
+    </nav>
+    <a class="btn btn-primary btn-sm js-download" href="https://github.com/animeespace/atelier/releases/latest/download/Atelier-Setup.exe"><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5v11"/><path d="m7 10 5 5 5-5"/><path d="M5 20.5h14"/></svg><span>Télécharger</span></a>
+  </div>
+</header>
+
+<main id="contenu">
+<section class="page-head">
+  <div class="container page-head-inner">
+<img class="app-icon-lg" src="assets/apps/retime.png" alt="" width="84" height="84">    <div>
+<p class="eyebrow">Sous-titres</p>      <h1>Retime</h1>
+      <p class="lead">Recale tes .ass sur la voix japonaise, automatiquement.</p>
+      <p class="meta">Version 1.0.0 · publiée le 19 octobre 2026 · 2,9 Go à télécharger, 4,7 Go une fois installé</p>
+    </div>
+  </div>
+</section>
+
+<div class="container doc">
+  <aside class="doc-nav">
+    <nav aria-label="Sur cette page">
+      <p class="doc-nav-title">Sur cette page</p>
+      <a href="#installer">Installer Retime</a>
+      <a href="#nouveautes">Nouveautés</a>
+<a href="#utilisation">Utilisation</a><a href="#réglages-utiles">Réglages utiles</a><a href="#fonctionnement">Fonctionnement</a>    </nav>
+  </aside>
+
+  <article class="prose">
+    <p class="intro">Recale un fichier .ass sur la voix japonaise d&#39;une vidéo grâce à Whisper, à l&#39;analyse de la voix isolée et à la comparaison du sens entre le japonais entendu et le texte. Timeline pour vérifier et ajuster chaque ligne, traitement par lot des épisodes.</p>
+    <div class="callout" id="installer">
+      <div>
+        <h2>Installer Retime</h2>
+        <p>Télécharge Atelier, ouvre-le, puis clique sur <strong>Installer</strong> sur la carte Retime.
+          Les mises à jour arrivent ensuite toutes seules.</p>
+      </div>
+      <a class="btn btn-primary js-download" href="https://github.com/animeespace/atelier/releases/latest/download/Atelier-Setup.exe"><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5v11"/><path d="m7 10 5 5 5-5"/><path d="M5 20.5h14"/></svg><span>Télécharger Atelier</span></a>
+    </div>
+
+    <h2 id="nouveautes">Nouveautés</h2>
+    <div class="release current">
+      <h3>Version 1.0.0 <span class="new">Actuelle</span><span class="date">19 octobre 2026</span></h3>
+      <p>Première version</p>
+    </div>
+
+    <hr>
+    <p>Recale automatiquement un <code>.ass</code> sur la voix japonaise d'une vidéo/audio, en se servant de Whisper, de l'analyse
+de la courbe sonore et de la comparaison de sens entre le japonais entendu et le texte du <code>.ass</code>.</p>
+<h2 id="utilisation">Utilisation</h2>
+<ol>
+<li>Glisser la vidéo (<code>.mkv</code>, <code>.mp4</code>…) ou l'audio et le <code>.ass</code> dans la fenêtre. La piste japonaise est choisie
+   automatiquement (modifiable dans « Piste audio »).</li>
+<li><strong>Analyser et recaler</strong> (F5).</li>
+<li>Vérifier : la timeline montre le spectrogramme, la forme d'onde, la courbe d'énergie de la voix isolée (zones
+   vertes = voix) et trois pistes : <em>Original</em> (orange), <em>Whisper JP</em> (bleu), <em>Nouveau</em> (vert).
+   - Cliquer une ligne (tableau ou timeline) zoome dessus ; <strong>Espace</strong> écoute le nouveau timing,
+     <strong>Maj+Espace</strong> l'original, <strong>Échap</strong> coupe, <strong>N</strong> saute à la prochaine ligne à vérifier.
+   - La région verte se déplace/étire à la souris ; les temps sont aussi éditables dans le tableau.
+   - Décocher une ligne garde son timing d'origine.</li>
+<li><strong>Exporter le .ass recalé</strong> (Ctrl+S). Par défaut : <code>&lt;nom&gt; retime.ass</code> à côté de l'original, qui n'est jamais
+   écrasé sans confirmation. Seules les colonnes Start/End changent (styles, tags, encodage intacts).</li>
+</ol>
+<p><strong>Traitement par lot</strong> : ajouter les vidéos et les <code>.ass</code>. Ils sont appariés par numéro d'épisode.</p>
+<h2 id="réglages-utiles">Réglages utiles</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Réglage</th>
+<th>Effet</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Lead-in / Lead-out</td>
+<td>Avance du début / prolongation de la fin par rapport à la voix (30 / 80 ms par défaut, calibrés sur ton retime de MFB 11)</td>
+</tr>
+<tr>
+<td>Garder si écart &lt;</td>
+<td>Ne touche pas les lignes déjà à moins de X ms (0 = tout recaler)</td>
+</tr>
+<tr>
+<td>Lier si écart &lt;</td>
+<td>Prolonge une ligne jusqu'à la suivante si le trou est plus court</td>
+</tr>
+<tr>
+<td>Caler sur les frames</td>
+<td>Temps posés sur les frames de la vidéo (convention Aegisub)</td>
+</tr>
+<tr>
+<td>Keyframes</td>
+<td>Accroche aux images clés du flux (désactivé : sur tes raws MFB elles tombent toutes les 2 s, pas aux changements de plan)</td>
+</tr>
+<tr>
+<td>Styles</td>
+<td><em>Recaler</em> = dialogue ; <em>Décaler seulement</em> = panneaux/typeset (lignes <code>\pos</code>/<code>\move</code> toujours décalées, jamais accrochées à la voix)</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="fonctionnement">Fonctionnement</h2>
+<ol>
+<li>ffmpeg extrait la piste ; <strong>Demucs</strong> isole la voix et <strong>Whisper large-v3</strong> transcrit le japonais (en parallèle, GPU).</li>
+<li>Courbe d'énergie de la voix isolée (pas de 10 ms) → attaques, retombées, creux.</li>
+<li>Décalage global par corrélation voix ↔ sous-titres, détection des dérives de framerate (25 / 23,976…).</li>
+<li>Phrases japonaises ↔ lignes du <code>.ass</code> par similarité multilingue (<strong>LaBSE</strong>) → suivi du décalage ligne par
+   ligne (gère coupures et scènes retirées).</li>
+<li>Chaque ligne est accrochée à l'attaque / la retombée la plus probable, puis post-traitement (lead-in/out,
+   chevauchements, durée minimale, frames).</li>
+<li>Le japonais entendu sur chaque ligne est traduit (<strong>NLLB</strong>) et comparé au texte du <code>.ass</code> → colonne « Sens »
+   et confiance ; les lignes douteuses sont surlignées.</li>
+</ol>
+<p>Les modèles (~10 Go) et le cache d'analyse (voix isolée + transcription, ~50 Mo/épisode) sont dans
+<code>%LOCALAPPDATA%\Retime</code> (menu « ⋯ » pour l'ouvrir ou vider le cache). Relancer un épisode déjà analysé prend ~5-20 s.</p>
+  </article>
+</div>
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <span>Atelier 1.0.0 · page mise à jour le 19 octobre 2026</span>
+    <nav aria-label="Liens du pied de page">
+      <a href="index.html#logiciels">Logiciels</a>
+      <a href="guide.html">Guide</a>
+      <a href="guide.html#problemes">Un problème ?</a>
+      <a href="https://github.com/animeespace/atelier/releases" target="_blank" rel="noopener">Toutes les versions</a>
+    </nav>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite" hidden>
+  <span class="ok"><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span>
+  <div>
+    <strong>Le téléchargement a commencé</strong>
+    <p>Ouvre <b>Atelier-Setup.exe</b> depuis tes téléchargements.
+<a href="index.html#installation">Voir les étapes d'installation</a>.</p>
+  </div>
+  <button type="button" aria-label="Fermer"><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+</div>
+<script src="assets/site.js?v=7102036b" defer></script>
+</body>
+</html>

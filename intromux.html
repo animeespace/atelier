@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>IntroMux · Atelier</title>
+<meta name="description" content="Intro + vidéo + sous-titres, encodés à la chaîne. Colle une intro au début de chaque vidéo, ajoute ses sous-titres (sur la vidéo, jamais sur l&#39;intro) et encode tout en file d&#39;attente pendant que tu fais autre chose. Sait aussi regarder, couper avec des repères A/B et convertir, comme Avidemux.">
+<meta name="theme-color" content="#7b5cff">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Atelier">
+<meta property="og:title" content="IntroMux · Atelier">
+<meta property="og:description" content="Intro + vidéo + sous-titres, encodés à la chaîne. Colle une intro au début de chaque vidéo, ajoute ses sous-titres (sur la vidéo, jamais sur l&#39;intro) et encode tout en file d&#39;attente pendant que tu fais autre chose. Sait aussi regarder, couper avec des repères A/B et convertir, comme Avidemux.">
+<meta property="og:image" content="https://animeespace.github.io/atelier/assets/atelier.webp">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="assets/logo.png">
+<link rel="apple-touch-icon" href="assets/logo.png">
+<link rel="stylesheet" href="assets/style.css?v=7102036b">
+</head>
+<body class="app">
+<a class="skip" href="#contenu">Aller au contenu</a>
+<header class="topbar">
+  <div class="container topbar-inner">
+    <a class="brand" href="index.html"><img src="assets/logo.png" alt="" width="28" height="28"><span>Atelier</span></a>
+    <nav class="nav" aria-label="Navigation principale">
+      <a class="hide-sm" href="index.html#logiciels">Logiciels</a>
+      <a class="hide-sm" href="index.html#installation">Installation</a>
+      <a href="guide.html">Guide</a>
+      <a class="hide-sm" href="index.html#questions">Questions</a>
+    </nav>
+    <a class="btn btn-primary btn-sm js-download" href="https://github.com/animeespace/atelier/releases/latest/download/Atelier-Setup.exe"><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5v11"/><path d="m7 10 5 5 5-5"/><path d="M5 20.5h14"/></svg><span>Télécharger</span></a>
+  </div>
+</header>
+
+<main id="contenu">
+<section class="page-head">
+  <div class="container page-head-inner">
+<img class="app-icon-lg" src="assets/apps/intromux.png" alt="" width="84" height="84">    <div>
+<p class="eyebrow">Vidéo</p>      <h1>IntroMux</h1>
+      <p class="lead">Intro + vidéo + sous-titres, encodés à la chaîne.</p>
+      <p class="meta">Version 1.0.0 · publiée le 19 octobre 2026 · 120 Mo à télécharger, 312 Mo une fois installé</p>
+    </div>
+  </div>
+</section>
+
+<div class="container doc">
+  <aside class="doc-nav">
+    <nav aria-label="Sur cette page">
+      <p class="doc-nav-title">Sur cette page</p>
+      <a href="#installer">Installer IntroMux</a>
+      <a href="#nouveautes">Nouveautés</a>
+<a href="#ce-que-fait-intromux">Ce que fait IntroMux</a><a href="#prise-en-main-en-5-étapes">Prise en main en 5 étapes</a><a href="#la-file-dattente">La file d'attente</a><a href="#travailler-en-arrière-plan">Travailler en arrière-plan</a><a href="#ressources--garder-un-pc-fluide">Ressources : garder un PC fluide</a><a href="#profils-dencodage">Profils d'encodage</a><a href="#en-cas-de-problème">En cas de problème</a><a href="#licences">Licences</a>    </nav>
+  </aside>
+
+  <article class="prose">
+    <p class="intro">Colle une intro au début de chaque vidéo, ajoute ses sous-titres (sur la vidéo, jamais sur l&#39;intro) et encode tout en file d&#39;attente pendant que tu fais autre chose. Sait aussi regarder, couper avec des repères A/B et convertir, comme Avidemux.</p>
+    <div class="callout" id="installer">
+      <div>
+        <h2>Installer IntroMux</h2>
+        <p>Télécharge Atelier, ouvre-le, puis clique sur <strong>Installer</strong> sur la carte IntroMux.
+          Les mises à jour arrivent ensuite toutes seules.</p>
+      </div>
+      <a class="btn btn-primary js-download" href="https://github.com/animeespace/atelier/releases/latest/download/Atelier-Setup.exe"><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5v11"/><path d="m7 10 5 5 5-5"/><path d="M5 20.5h14"/></svg><span>Télécharger Atelier</span></a>
+    </div>
+
+    <h2 id="nouveautes">Nouveautés</h2>
+    <div class="release current">
+      <h3>Version 1.0.0 <span class="new">Actuelle</span><span class="date">19 octobre 2026</span></h3>
+      <p>Première version</p>
+    </div>
+
+    <hr>
+    <p>IntroMux est un petit logiciel Windows gratuit pour préparer des vidéos <strong>en série</strong> :
+il colle une <strong>intro</strong> au début de chaque vidéo, ajoute les <strong>sous-titres</strong> de cette vidéo
+(uniquement sur la vidéo, jamais sur l'intro) et encode tout <strong>à la chaîne</strong>, pendant que
+vous faites autre chose.</p>
+<p>Il sait aussi faire ce que fait Avidemux : regarder la vidéo, la couper avec des repères A/B,
+choisir le format, la qualité, la résolution, les filtres d'image…</p>
+<hr />
+<h2 id="ce-que-fait-intromux">Ce que fait IntroMux</h2>
+<ul>
+<li><strong>Intro</strong> : une vidéo (générique, logo, jingle…) placée avant la vidéo principale.
+  Facultatif : une <strong>outro</strong> à la fin.</li>
+<li><strong>Sous-titres sur la vidéo principale seulement</strong> : fichiers <code>.ass</code>, <code>.ssa</code>, <code>.srt</code>, <code>.vtt</code>, ou
+  piste de sous-titres déjà présente dans la vidéo (MKV). Leur minutage reste celui de la
+  vidéo : le « 00:00 » des sous-titres correspond au début de l'épisode, pas au début de
+  l'intro. Ils n'apparaissent donc jamais pendant l'intro.</li>
+<li><strong>File d'attente</strong> : intro + épisode 1 + sous-titres 1, intro + épisode 2 + sous-titres 2…
+  autant que vous voulez. IntroMux les encode <strong>l'une après l'autre, tout seul</strong>.</li>
+<li><strong>Dossier et nom de chaque fichier</strong> choisis avant l'export (avec un modèle automatique,
+  par exemple <code>Episode 01_final.mp4</code>).</li>
+<li><strong>Arrière-plan</strong> : IntroMux continue dans la zone de notification (près de l'horloge),
+  empêche la mise en veille pendant l'encodage et vous prévient quand c'est fini.</li>
+<li><strong>Ressources maîtrisées</strong> : priorité basse, limite d'utilisation du processeur, nombre de
+  cœurs… pour continuer à utiliser le PC normalement.</li>
+<li><strong>Carte graphique détectée automatiquement</strong> (NVIDIA, Intel ou AMD) pour encoder vite ;
+  sinon le processeur prend le relais.</li>
+</ul>
+<h2 id="prise-en-main-en-5-étapes">Prise en main en 5 étapes</h2>
+<p>L'écran du haut est la <strong>composition</strong> d'une vidéo, de gauche à droite :</p>
+<pre><code>① INTRO   ➜   ② VIDÉO PRINCIPALE + SOUS-TITRES   ➜   ③ OUTRO (facultatif)
+</code></pre>
+<ol>
+<li><strong>L'intro</strong> — glissez votre vidéo d'intro dans la case <strong>① INTRO</strong> (ou cliquez dessus pour la
+   choisir). La case à cocher <strong>Garder</strong>, cochée d'office, la laisse en place pour toutes les
+   vidéos suivantes : vous ne la choisissez qu'une fois. N'y touchez pas ; décochez-la
+   seulement si cette intro ne doit servir qu'à la vidéo en cours (elle est alors retirée après
+   l'ajout à la file d'attente).</li>
+<li><strong>La vidéo principale</strong> — glissez l'épisode dans la case <strong>② VIDÉO PRINCIPALE</strong>. L'aperçu
+   s'affiche à droite. Si un fichier de sous-titres porte le même nom que la vidéo (par exemple
+   <code>Episode 01.fr.ass</code> à côté de <code>Episode 01.mkv</code>), il est <strong>trouvé automatiquement</strong>.</li>
+<li><strong>Les sous-titres</strong> — sinon, glissez le fichier <code>.ass</code> / <code>.srt</code> sur l'encadré <strong>SOUS-TITRES</strong>
+   (ou sur la vidéo principale), ou cliquez sur <strong>Parcourir…</strong> dans l'encadré SOUS-TITRES
+   (Ctrl+T). Choisissez :
+   - <strong>Incrustés</strong> : dessinés dans l'image, toujours visibles, lisibles partout ;
+   - <strong>Piste séparée</strong> : le spectateur peut les activer ou non dans son lecteur.</li>
+<li><strong>La sortie</strong> — par défaut, la vidéo finale est enregistrée <strong>à côté de l'épisode</strong> (case
+   « Même dossier que la vidéo » cochée). Pour l'enregistrer ailleurs, cliquez sur <strong>Parcourir…</strong>
+   à côté du champ <strong>Dossier</strong> : la case « Même dossier que la vidéo » se décoche toute seule, et
+   ce dossier est retenu pour les vidéos suivantes, même après un redémarrage (réglage par
+   défaut : <strong>Outils → Paramètres → Général → Dossier de sortie</strong>). Vérifiez ensuite le <strong>nom</strong>
+   du fichier (proposé automatiquement, modifiable) et le <strong>profil</strong> (« Standard » convient
+   presque toujours).</li>
+<li><strong>Ajouter à la file d'attente</strong> (Ctrl+Entrée). Recommencez pour l'épisode suivant (l'intro
+   est déjà en place), puis cliquez sur <strong>Démarrer</strong> (F5) : l'encodage commence à ce moment-là.</li>
+</ol>
+<p>Astuces :</p>
+<ul>
+<li><strong>Ajouter plusieurs vidéos…</strong> (Ctrl+Maj+O) : sélectionnez tous les épisodes d'un coup ;
+  IntroMux associe chaque vidéo à ses sous-titres par le nom et vous laisse corriger les noms
+  de sortie avant de tout ajouter.</li>
+<li><strong>Couper</strong> : placez les repères <strong>A</strong> et <strong>B</strong> (touches <code>[</code> et <code>]</code>), puis <strong>Supprimer A→B</strong>
+  (enlève le passage) ou <strong>Garder A→B</strong> (ne garde que ce morceau).</li>
+<li><strong>Aperçu final</strong> : montre une image telle qu'elle sera encodée (sous-titres compris).
+  <strong>Extrait de test</strong> : encode 10 secondes pour vérifier le résultat avant de lancer la file.</li>
+<li>Message « Aperçu indisponible pour ce format » : seul l'aperçu ne sait pas lire ce fichier,
+  l'encodage fonctionnera quand même.</li>
+</ul>
+<p>Raccourcis utiles :</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Touche</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Espace</td>
+<td>lecture / pause de l'aperçu</td>
+</tr>
+<tr>
+<td>← / →</td>
+<td>image précédente / suivante</td>
+</tr>
+<tr>
+<td>Maj+← / Maj+→</td>
+<td>± 1 seconde</td>
+</tr>
+<tr>
+<td>Ctrl+← / Ctrl+→</td>
+<td>± 10 secondes</td>
+</tr>
+<tr>
+<td><code>[</code> / <code>]</code></td>
+<td>repère A / repère B</td>
+</tr>
+<tr>
+<td>Suppr</td>
+<td>supprimer le passage A→B</td>
+</tr>
+<tr>
+<td>Ctrl+K</td>
+<td>garder seulement A→B</td>
+</tr>
+<tr>
+<td>Ctrl+Entrée</td>
+<td>ajouter à la file d'attente</td>
+</tr>
+<tr>
+<td>F5 / F6 / F7</td>
+<td>démarrer / pause-reprendre / arrêter la file</td>
+</tr>
+<tr>
+<td>Ctrl+N, Ctrl+O, Ctrl+I, Ctrl+T</td>
+<td>nouvelle composition, vidéo principale, intro, sous-titres</td>
+</tr>
+<tr>
+<td>Ctrl+P</td>
+<td>gérer les profils</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="la-file-dattente">La file d'attente</h2>
+<p>La partie basse de la fenêtre liste les vidéos à produire, avec leur progression, la vitesse
+et le temps restant.</p>
+<ul>
+<li>Les tâches sont encodées <strong>dans l'ordre, l'une après l'autre</strong>. Une tâche ajoutée pendant
+  l'encodage est prise en compte automatiquement.</li>
+<li><strong>Pause / Reprendre</strong> (F6) met l'encodage en pause sans rien perdre ; <strong>Arrêter</strong> (F7)
+  interrompt et remet les tâches « En attente » ; <strong>Arrêter après la tâche en cours</strong> termine
+  proprement la vidéo en cours puis s'arrête.</li>
+<li><strong>▲ ▼</strong> ou glisser-déposer pour changer l'ordre ; double-clic sur une tâche en attente pour
+  la <strong>modifier</strong> ; <strong>Dupliquer</strong>, <strong>Relancer</strong> (après une erreur), <strong>Supprimer</strong>.</li>
+<li>Le <strong>nom de sortie</strong> se modifie directement dans la liste (tant que la tâche n'a pas commencé).</li>
+<li>Si un fichier du même nom existe déjà, IntroMux ajoute « (2) », « (3) »… (réglable :
+  écraser ou ignorer). Il n'écrase jamais une de vos vidéos sources.</li>
+<li><strong>À la fin</strong> : ne rien faire, mettre en veille, éteindre le PC ou quitter IntroMux (avec un
+  compte à rebours de 60 secondes que vous pouvez annuler).</li>
+<li>La file est <strong>enregistrée automatiquement</strong> : si vous fermez IntroMux ou si le PC s'éteint,
+  elle est toujours là au prochain lancement (la tâche interrompue repart du début).</li>
+<li><strong>Fichier → Exporter la file… / Importer une file…</strong> pour la sauvegarder ou la reprendre sur
+  un autre PC.</li>
+</ul>
+<h2 id="travailler-en-arrière-plan">Travailler en arrière-plan</h2>
+<ul>
+<li>Fermer la fenêtre (✕) <strong>n'arrête pas</strong> IntroMux : il se range dans la <strong>zone de
+  notification</strong>, près de l'horloge (parfois cachée derrière la petite flèche <strong>^</strong>).</li>
+<li>Clic sur l'icône : réafficher la fenêtre. Clic droit : démarrer, pause, arrêter après la
+  tâche en cours, quitter. Une notification s'affiche à la fin de chaque vidéo (si les
+  notifications de Windows sont activées ; sinon l'icône IntroMux affiche ✓ ou ! et une petite
+  fenêtre résume la file à la fin).</li>
+<li>Pendant l'encodage, le PC ne se met pas en veille (réglable).</li>
+<li>Pour quitter vraiment : <strong>Fichier → Quitter</strong> (Ctrl+Q) ou clic droit sur l'icône →
+  <strong>Quitter</strong>.</li>
+<li>Options (Outils → Paramètres → Comportement) : lancer IntroMux au démarrage de Windows,
+  démarrer réduit, reprendre la file au lancement.</li>
+</ul>
+<h2 id="ressources--garder-un-pc-fluide">Ressources : garder un PC fluide</h2>
+<p><strong>Outils → Ressources…</strong> :</p>
+<ul>
+<li><strong>Priorité</strong> : « Basse » (recommandée) laisse la priorité à ce que vous faites ; l'encodage
+  utilise le reste du processeur. « Très basse » : seulement quand le PC ne fait rien.</li>
+<li><strong>Limite processeur (%)</strong> : plafond strict, par exemple 50 % pour garder un PC silencieux
+  et frais. 100 % = pas de limite.</li>
+<li><strong>Cœurs</strong> et <strong>threads</strong> : réserver une partie des cœurs du processeur à IntroMux.</li>
+<li><strong>Carte graphique</strong> : choix de la carte NVIDIA à utiliser, décodage matériel, et <strong>retour
+  automatique au processeur</strong> si la carte graphique échoue.</li>
+<li><strong>Encodages simultanés</strong> : 1 par défaut (strictement l'une après l'autre). 2 ou plus peut aller
+  plus vite sur un gros processeur ; les cartes GeForce limitent toutefois le nombre
+  d'encodages simultanés.</li>
+</ul>
+<p>La priorité, les cœurs et la limite processeur s'appliquent <strong>immédiatement</strong>, même aux
+encodages en cours.</p>
+<h2 id="profils-dencodage">Profils d'encodage</h2>
+<p>Un profil regroupe tous les réglages d'encodage. Profils fournis :</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Profil</th>
+<th>Pour quoi faire</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Standard — H.264 (GPU auto)</strong></td>
+<td>le bon choix par défaut : lisible partout (téléphone, TV, navigateur)</td>
+</tr>
+<tr>
+<td>Haute qualité — H.264 x264 (processeur)</td>
+<td>image très propre, plus lent, fichiers plus gros</td>
+</tr>
+<tr>
+<td>Rapide — NVIDIA NVENC H.264</td>
+<td>très rapide sur carte NVIDIA (sinon le processeur prend le relais)</td>
+</tr>
+<tr>
+<td>Compact — H.265/HEVC (GPU auto)</td>
+<td>fichiers deux fois plus petits, pour appareils récents</td>
+</tr>
+<tr>
+<td>Anime — HEVC 10 bits x265 (lent, très propre)</td>
+<td>animation : dégradés sans escaliers, fichier MKV</td>
+</tr>
+<tr>
+<td>Moderne — AV1 (GPU auto)</td>
+<td>fichiers très compacts ; rapide seulement sur cartes récentes</td>
+</tr>
+<tr>
+<td>YouTube 1080p</td>
+<td>prêt à mettre en ligne en 1920×1080</td>
+</tr>
+<tr>
+<td>Partage léger — 720p (≈ 50 Mo)</td>
+<td>à envoyer par messagerie (vidéos de moins de 10 minutes)</td>
+</tr>
+<tr>
+<td>Copie rapide (coupe sans ré-encodage)</td>
+<td>couper sans perte, instantané (sans intro ni sous-titres incrustés)</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Profils → Gérer les profils…</strong> (Ctrl+P) : dupliquez un profil fourni pour le modifier
+(codec, qualité, résolution, recadrage, débruitage, transition intro→vidéo, son, style des
+sous-titres .srt…). <strong>Exporter… / Importer…</strong> permet d'échanger des profils avec vos amis.</p>
+<h2 id="en-cas-de-problème">En cas de problème</h2>
+<h3 id="les-journaux">Les journaux</h3>
+<p><strong>Outils → Ouvrir le dossier des journaux</strong> (c'est <code>%APPDATA%\IntroMux\logs</code>) :</p>
+<ul>
+<li><code>app.log</code> : le journal du programme ;</li>
+<li><code>job_….log</code> : un fichier par vidéo encodée, avec la commande ffmpeg exacte et ses messages.</li>
+</ul>
+<p>Pour demander de l'aide, envoyez ces fichiers (et une capture du message d'erreur).</p>
+<h3 id="tester-linstallation">Tester l'installation</h3>
+<p><strong>Outils → Tester l'installation</strong> crée deux petites vidéos de test, les encode avec la file
+d'attente (processeur, puis carte graphique si elle est disponible), puis vérifie la durée,
+l'image, le son et les sous-titres. Tout se passe dans un dossier temporaire : vos réglages et
+votre file ne sont pas touchés.</p>
+<p>En ligne de commande (même test, sans fenêtre) :</p>
+<pre><code class="language-bat">start /wait IntroMux.exe --selftest --selftest-out &quot;%USERPROFILE%\Desktop\rapport-intromux.json&quot;
+</code></pre>
+<ul>
+<li><code>start /wait</code> attend la fin du test (IntroMux est un programme à fenêtre : sans cela, la
+  commande rend la main tout de suite) ;</li>
+<li>sans <code>--selftest-out</code>, le rapport est écrit dans <code>%APPDATA%\IntroMux\logs\selftest-report.json</code> ;</li>
+<li><code>--no-gpu</code> teste seulement le processeur ;</li>
+<li>code de retour 0 = tout va bien, 1 = au moins une étape a échoué (le rapport dit laquelle).</li>
+</ul>
+<h3 id="problèmes-fréquents">Problèmes fréquents</h3>
+<ul>
+<li><strong>« L'encodeur de la carte graphique a échoué »</strong> : mettez à jour le pilote de la carte
+  graphique. Si le retour au processeur est activé (par défaut), la vidéo est quand même
+  encodée, plus lentement.</li>
+<li><strong>« Disque plein »</strong> : libérez de la place sur le disque de sortie, ou choisissez un autre
+  dossier temporaire (Outils → Paramètres → Général).</li>
+<li><strong>« Accès refusé »</strong> : le dossier de sortie est protégé, ou le fichier est ouvert dans un
+  lecteur vidéo : fermez-le ou choisissez un autre dossier.</li>
+<li><strong>« Erreur de lecture ou d'écriture sur un disque »</strong> : la clé USB, le disque externe ou le
+  disque réseau a été débranché ou déconnecté pendant l'encodage. Rebranchez-le, puis
+  <strong>Relancer</strong> la tâche.</li>
+<li><strong>« Windows a refusé de créer le fichier de sortie »</strong> : le nom ou le chemin du fichier est
+  refusé (trop long, ou dossier inaccessible). Raccourcissez le nom ou choisissez un autre
+  dossier. Avec l'avertissement « Chemin de sortie très long », IntroMux enregistre bien la
+  vidéo, mais l'Explorateur et beaucoup de lecteurs ne pourront pas l'ouvrir : préférez un
+  dossier moins profond.</li>
+<li><strong>Des « Ã© » à la place des « é » dans les sous-titres</strong> : « Ã© » est un « é » enregistré en
+  UTF-8 (l'encodage moderne) mais lu comme un fichier ancien (Windows-1252). Cela arrive quand un
+  fichier UTF-8 contient aussi quelques caractères d'un ancien encodage, souvent une apostrophe
+  ou des guillemets collés depuis Word. IntroMux répare ces fichiers tout seul et le signale
+  (« Quelques caractères mal encodés du fichier de sous-titres ont été corrigés »). Si des
+  « Ã© » restent visibles dans l'aperçu, choisissez <strong>UTF-8 (forcé…)</strong> dans <strong>Outils →
+  Paramètres → Général → Encodage des .srt anciens</strong>. S'ils restent encore, ils sont écrits tels
+  quels dans le fichier : il faut récupérer un fichier de sous-titres propre. Pour réparer
+  vous-même un fichier mélangé (utile pour d'autres lecteurs) : dans le Bloc-notes, <strong>Fichier →
+  Ouvrir…</strong>, choisissez <strong>UTF-8</strong> dans la liste <strong>Encodage</strong> en bas de la fenêtre, ouvrez le
+  fichier, remplacez les quelques « � » par le bon caractère, puis <strong>Fichier → Enregistrer</strong>.</li>
+<li><strong>D'autres caractères bizarres dans un vieux .srt</strong> (lettres accentuées sans rapport avec le
+  texte, par exemple « Ïðèâåò » au lieu de russe) : le fichier n'est pas en UTF-8 ; choisissez son
+  encodage dans <strong>Outils → Paramètres → Général → Encodage des .srt anciens</strong> (« Windows-1252 »,
+  le réglage par défaut, convient à la plupart des .srt français ; « Windows-1251 » pour le russe…).</li>
+<li><strong>File d'attente vide au démarrage, avec un message « illisible »</strong> : le fichier de la file
+  (<code>queue.json</code>) était abîmé. IntroMux l'a mis de côté sous le nom <code>queue.json.corrupt-…</code> (dans
+  <code>%APPDATA%\IntroMux</code>) et repart avec une file vide. Vous pouvez essayer de le réimporter :
+  <strong>Fichier → Importer une file…</strong>, choisissez « Tous les fichiers » puis ce fichier.</li>
+<li><strong>Réglages abîmés</strong> : IntroMux met de côté un fichier de réglages illisible
+  (<code>settings.json.corrupt-…</code>) et repart des réglages par défaut. Pour tout remettre à zéro,
+  quittez IntroMux et supprimez le dossier <code>%APPDATA%\IntroMux</code>.</li>
+<li><strong>« IntroMux ne peut pas démarrer : son dossier est rangé trop profondément »</strong> (version
+  portable) : déplacez le dossier <code>IntroMux</code> plus près de la racine du disque, par exemple dans
+  <code>C:\IntroMux</code>.</li>
+</ul>
+<h2 id="licences">Licences</h2>
+<p>IntroMux est gratuit. Il s'appuie sur des logiciels libres, inclus sans modification :</p>
+<ul>
+<li><strong>FFmpeg</strong> (build gyan.dev), sous licence <strong>GPL v3</strong> — code source : <a href="https://ffmpeg.org" target="_blank" rel="noopener">https://ffmpeg.org</a>,
+  builds Windows : <a href="https://www.gyan.dev/ffmpeg/builds/" target="_blank" rel="noopener">https://www.gyan.dev/ffmpeg/builds/</a> et
+  <a href="https://github.com/GyanD/codexffmpeg" target="_blank" rel="noopener">https://github.com/GyanD/codexffmpeg</a> ;</li>
+<li><strong>Qt 6 / PySide6</strong>, sous licence <strong>LGPL v3</strong> ;</li>
+<li><strong>Python</strong>, sous licence <strong>PSF</strong> ; <strong>psutil</strong> (BSD) ; <strong>pysubs2</strong> (MIT).</li>
+</ul>
+<p>Les textes complets et les liens vers les sources se trouvent dans le dossier
+<code>licenses</code>, également inclus dans le programme
+(<code>_internal\licenses</code> dans la version portable).</p>
+  </article>
+</div>
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <span>Atelier 1.0.0 · page mise à jour le 19 octobre 2026</span>
+    <nav aria-label="Liens du pied de page">
+      <a href="index.html#logiciels">Logiciels</a>
+      <a href="guide.html">Guide</a>
+      <a href="guide.html#problemes">Un problème ?</a>
+      <a href="https://github.com/animeespace/atelier/releases" target="_blank" rel="noopener">Toutes les versions</a>
+    </nav>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite" hidden>
+  <span class="ok"><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span>
+  <div>
+    <strong>Le téléchargement a commencé</strong>
+    <p>Ouvre <b>Atelier-Setup.exe</b> depuis tes téléchargements.
+<a href="index.html#installation">Voir les étapes d'installation</a>.</p>
+  </div>
+  <button type="button" aria-label="Fermer"><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+</div>
+<script src="assets/site.js?v=7102036b" defer></script>
+</body>
+</html>
